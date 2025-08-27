@@ -8,7 +8,7 @@ function Shortener() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/url/shorten", {
+      const res = await axios.post("https://urlshortener-pbdh.onrender.com/api/url/shorten", {
         longUrl,
       });
       setShortUrl(res.data.shortUrl);
